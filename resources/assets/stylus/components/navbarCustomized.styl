@@ -1,0 +1,28 @@
+.navbar-customized
+	border-radius: 0
+	border: transparent
+	li
+		display: flex
+		height: 60px
+		align-items: center
+		justify-content: flex-start
+		&.separator
+			height: 1em
+			width: 2em
+		&>a
+			padding 10px
+		&.active,&.active>a
+			background $mainColor !important
+			color #FFF !important
+		&:hover,&>a:hover
+			background $colorFocusActive !important
+			color #FFF !important
+		&:focus,&>a:focus
+			background $colorFocusActive
+			color #FFF
+			
+@media (min-width: 768px)
+	.navbar-customized
+		li
+			align-items center
+			justify-content center

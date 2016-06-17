@@ -1,0 +1,123 @@
+{
+    "key": "group_5736497f5819b",
+    "title": "Servicios y Representaciones",
+    "fields": [
+        {
+            "key": "field_573649851391f",
+            "label": "Imagen Circular",
+            "name": "imagen_circular",
+            "type": "image_crop",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": 50,
+                "class": "redonda",
+                "id": ""
+            },
+            "crop_type": "hard",
+            "target_size": "imagen_servicios_redonda",
+            "width": "",
+            "height": "",
+            "preview_size": "imagen_servicios_redonda",
+            "force_crop": "yes",
+            "save_in_media_library": "no",
+            "retina_mode": "no",
+            "save_format": "url",
+            "library": "all"
+        },
+        {
+            "key": "field_5761c5516efa3",
+            "label": "\u00bfTiene Link?",
+            "name": "tiene_link",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0
+        },
+        {
+            "key": "field_5761c53c6efa2",
+            "label": "Link",
+            "name": "link",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5761c5516efa3",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_573672825ead1",
+            "label": "Resumen",
+            "name": "resumen",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": 50,
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": 1000,
+            "rows": "",
+            "new_lines": "wpautop",
+            "readonly": 0,
+            "disabled": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "servicios"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "representaciones"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "productos"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1466193589
+}

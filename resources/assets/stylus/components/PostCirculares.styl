@@ -1,0 +1,65 @@
+.PostCirculares {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 2em 0;
+}
+
+.PostCirculares__Titulo {
+	    font-size: 1.5em;
+	    font-weight: 600;
+}
+
+.PostCirculares__Subtitulo {
+	margin: 2em;
+	text-align center
+}
+.PostCircular__Item
+	width 100%
+	margin-bottom: 1em
+	&:last-child
+		margin-bottom 0
+.PostCirculares__Items {
+	display: flex
+	flex-direction:row
+	flex-wrap wrap
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	width 100%
+}
+
+.PostCircular__Item__Imagen img {
+	border-radius:50%;
+}
+
+.PostCircular__Item__Titulo {
+	margin: 1em 0;
+	font-weight: 600;
+}
+
+.PostCircular__Item__Resumen {
+	margin: 2em;
+}
+.PostCircular__Item__Boton
+	color:$colorFocusActive
+	border-color:@color
+	border-radius 0
+/*Anything outside of media queries is for MOBILE
+This is Mobile first approach.
+*/
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px)
+	.PostCircular__Item
+		width 50%
+		padding 1em 0
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px)
+	.PostCircular__Item
+		width 33%
+		padding 0 1em
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px){}

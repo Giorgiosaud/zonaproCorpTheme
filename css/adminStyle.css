@@ -1,0 +1,4 @@
+.redonda img:not(.crop-image),.redonda .preview{
+	border-radius:50%;
+}
+

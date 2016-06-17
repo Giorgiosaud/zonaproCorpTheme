@@ -1,0 +1,52 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "74239efca5f3831811db11de97933f5e",
+    "content-hash": "63cb156739afd7f9e03a53be57f180ec",
+    "packages": [
+        {
+            "name": "jorgelsaud/bootstrap-nav-walker",
+            "version": "v2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/giorgiosaud/bootstrapNavWalker.git",
+                "reference": "092224d2f5da85900b743ed04e9f193a0f963ead"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/giorgiosaud/bootstrapNavWalker/zipball/092224d2f5da85900b743ed04e9f193a0f963ead",
+                "reference": "092224d2f5da85900b743ed04e9f193a0f963ead",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "jorgelsaud\\WordpressTools\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Giorgiosaud",
+                    "email": "jorgelsaud@gmail.com"
+                }
+            ],
+            "description": "Bootstrap Nav Walker for wordpress",
+            "time": "2016-05-16 15:10:10"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

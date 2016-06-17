@@ -1,0 +1,48 @@
+{
+    "key": "group_5745de17b06e6",
+    "title": "Tipos de Productos",
+    "fields": [
+        {
+            "key": "field_5745de21e7b3e",
+            "label": "imagen",
+            "name": "imagen",
+            "type": "image_crop",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "crop_type": "hard",
+            "target_size": "imagen_servicios_redonda",
+            "width": "",
+            "height": "",
+            "preview_size": "imagen_servicios_redonda",
+            "force_crop": "yes",
+            "save_in_media_library": "no",
+            "retina_mode": "no",
+            "save_format": "url",
+            "library": "all"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "taxonomy",
+                "operator": "==",
+                "value": "tipo_de_producto"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1464200955
+}

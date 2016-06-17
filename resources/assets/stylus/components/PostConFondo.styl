@@ -1,0 +1,60 @@
+.PostConFondo {
+    display: flex;
+    color: white;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 2em 0;
+    margin: 2em 0;
+}
+
+.PostConFondo__Titulo {padding-bottom: 1em;font-size: 2em;}
+
+.PostConFondo__Items {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.PostConFondo__Item
+	padding: 1em;
+	border: solid white 1px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 2em
+	width 80%
+	&:last-child
+		margin-bottom 0
+.PostConFondo__Item__Imagen img{
+    width:100%;
+    border-radius:50%
+}
+
+.PostConFondo__Item__Imagen {
+    flex: 1;
+}
+
+.PostConFondo__Item__Resumen {
+    flex: 3;
+    padding: 0 1em;
+}
+/*Anything outside of media queries is for MOBILE
+This is Mobile first approach.
+*/
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px)
+	.PostConFondo__Item
+		width 45%
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px)
+	.PostConFondo__Item
+		width 30%
+		margin-bottom 0
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px){}

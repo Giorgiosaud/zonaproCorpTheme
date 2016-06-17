@@ -1,0 +1,22 @@
+{
+	"name": "jorgelsaud/zonapro-corp-theme",
+	"authors": [
+	{
+		"name": "Jorge Saud",
+		"email": "jorgelsaud@gmail.com"
+	}
+	],
+	"autoload":{
+		"psr-4":{
+			"jorgelsaud\\ZonaproCorpTheme\\":"src/"
+		},
+		"files":[
+			"src/helpers.php",
+			"src/initializers.php",
+			"src/customizations/menusFunctions.php"
+		]
+	},
+	"require": {
+		"jorgelsaud/bootstrap-nav-walker": "2.*"
+	}
+}
