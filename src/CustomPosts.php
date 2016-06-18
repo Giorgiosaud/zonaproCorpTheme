@@ -27,6 +27,8 @@ class CustomPosts{
 			while ( $custom_posts_query->have_posts() ) {
 				$custom_posts_query->the_post();
 				$post=[];
+				$post['tiene_link']=false;
+				$post['link']=false;
 				$post['title']=get_the_title();
 				$post['excerpt']=get_posts_excerpt($length,'more_callback');
 				$post['link']=get_permalink();
@@ -38,6 +40,9 @@ class CustomPosts{
 				}
 				if(get_field('tiene_link')){
 					$post['tiene_link']=get_field('tiene_link');	
+				}
+				else{
+
 				}
 				$post['resumen']=(get_field('resumen'))?get_field('resumen'):$post['excerpt'];
 				$posts[]=$post;
