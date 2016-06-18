@@ -175,11 +175,11 @@ if(!function_exists('mainMenu')){
 			'menu'              => 'main-menu',
 			'theme_location'    => 'main-menu',
 			'depth'             => 0,
-			'container'         => 'div',
-			'container_class'   => 'collapse navbar-collapse navbar-right',
-			'container_id'      => 'mainMenu',
-			'menu_class'        => 'nav navbar-nav',
-			'fallback_cb'       => '\jorgelsaud\WordpressTools\NavWalker::fallback',
+			'container'         => '',
+			// 'container_class'   => 'nav navbar-nav',
+			// 'container_id'      => 'mainMenu',
+			'menu_class'        => 'nav navbar-nav pull-sm-right',
+			// 'fallback_cb'       => '\jorgelsaud\WordpressTools\NavWalker::fallback',
 			'walker'            => new \jorgelsaud\WordpressTools\NavWalker()
 		)
 	);

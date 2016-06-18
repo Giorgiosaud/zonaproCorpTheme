@@ -2,6 +2,12 @@ body {
   padding-top: 4em;
   background-size: cover;
 }
+.navbar {
+  padding: 0 1rem;
+}
+.text-center {
+  text-align: center;
+}
 .contenidoInterno {
   padding-top: 3em 0;
 }
@@ -47,6 +53,9 @@ body {
 }
 .onlyIcon {
   font-size: 2em;
+}
+.navbar-nav .nav-item + .nav-item {
+  margin: 0;
 }
 .navbar-customized {
   border-radius: 0;

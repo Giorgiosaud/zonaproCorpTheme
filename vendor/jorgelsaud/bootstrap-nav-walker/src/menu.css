@@ -1,6 +1,9 @@
 ul.dropdown-menu {
   font-size: 1em;
 }
+.navbar-nav .nav-item + .nav-item{
+  margin-left:0;
+}
 .navbar-custom {
   margin-bottom: 0;
   font-size: 0.7em;

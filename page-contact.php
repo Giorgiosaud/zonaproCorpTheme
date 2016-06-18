@@ -91,7 +91,7 @@ get_template_part('flex','section');
 							<textarea id="mensaje" name="mensaje" cols="30" rows="8" placeholder="* Mensaje" required></textarea>
 						</div>
 						<div class="formField">
-							<div class="g-recaptcha" data-callback="recaptchaCallback" data-sitekey="6LdtTyETAAAAAMWdzaftef7b6LKST4YMQAiuqiNF"></div>
+							<div class="g-recaptcha" data-callback="recaptchaCallback" data-sitekey="<?php the_field('g_recaptcha_key','options')?>"></div>
 							<button id="enviarEmail" type="submit" disabled>Enviar</button>
 						</div>
 					</div>

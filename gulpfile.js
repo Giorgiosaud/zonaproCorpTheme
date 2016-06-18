@@ -16,8 +16,9 @@ elixir.config.publicPath='compiled';
  	mix.copy('vendor/bower_components/open-sans/fonts/','compiled/fonts/')
  	.copy('vendor/bower_components/bootstrap-sass/assets/fonts/','compiled/fonts/')
  	.copy('vendor/bower_components/font-awesome-sass/assets/fonts/','compiled/fonts/')
- 	.copy('vendor/bower_components/bootstrap-sass/assets/javascripts/bootstrap.js','resources/assets/js')
  	.copy('vendor/bower_components/jquery/dist/jquery.js','resources/assets/js')
+ 	.copy('vendor/bower_components/tether/dist/js/tether.js','resources/assets/js')
+ 	.copy('vendor/bower_components/bootstrap/dist/js/bootstrap.js','resources/assets/js')
  	.copy('vendor/bower_components/scroll-parallax/dist/Parallax.js','resources/assets/js')
  	.sass('sass.scss', 'resources/assets/css',
  	{
@@ -29,7 +30,7 @@ elixir.config.publicPath='compiled';
  	.stylus('app.styl','resources/assets/css')
 	.styles(['sass.css'],'compiled/css/assets.css')
 	.styles(['app.css'],'compiled/css/main.css')
- 	.scripts(['jquery.js','bootstrap.js','Parallax.js'],'compiled/js/assets.js')
+ 	.scripts(['jquery.js','tether.js','bootstrap.js','Parallax.js'],'compiled/js/assets.js')
 	.scripts(['main.js'],'compiled/js/main.js')
  	.version(['css/assets.css','css/main.css','js/assets.js','js/main.js']);
  });
