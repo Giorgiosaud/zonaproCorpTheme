@@ -20,8 +20,8 @@ class Styles
 		wp_register_script('recaptchajs','https://www.google.com/recaptcha/api.js',array(),null,true);
 		$deps=array('recaptchajs');
 
-		if(get_field('api_googlemaps', 'option')){
-		$google_key=get_field('api_googlemaps', 'option');
+		if(get_field('api_googlemaps', 'options')){
+		$google_key=get_field('api_googlemaps', 'options');
 	wp_register_script('googleMap',"https://maps.googleapis.com/maps/api/js?key={$google_key}&callback=initMap",array('mainJs','recaptchajs'),null,true);
 		array_push($deps, 'googleMap');
 		}
