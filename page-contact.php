@@ -71,7 +71,7 @@ get_template_part('flex','section');
 						<div id="map"></div>
 					</div>
 				</section>
-				<form id="emailForm" class="ContactForm container" action="enviarCorreo.php" method="POST">
+				<form id="emailForm" class="ContactForm container" method="POST">
 					<div class="FormHalf">
 						<div class="formField">
 							<input type="text" name="nombre" placeholder="* Nombre" required>
@@ -92,7 +92,7 @@ get_template_part('flex','section');
 						</div>
 						<div class="formField">
 							<div class="g-recaptcha" data-callback="recaptchaCallback" data-sitekey="<?php the_field('g_recaptcha_key','options')?>"></div>
-							<button id="enviarEmail" type="submit" disabled>Enviar</button>
+							<button id="enviarEmail" disabled>Enviar</button>
 						</div>
 					</div>
 				</form>

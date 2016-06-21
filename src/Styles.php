@@ -23,7 +23,9 @@ class Styles
 		wp_localize_script( 'assetsJs', 'Zonapro', array( 
 			'url' => admin_url( 'admin-ajax.php' ), 
 			'mapa'=>get_field('google_map_address','options'),
-			'nonce' => wp_create_nonce( 'myajax-post-comment-nonce' )  ) );
+			'nonce' => wp_create_nonce( 'myajax-post-comment-nonce' ),
+			'redirect'=>get_field('redirect','options')
+			  ) );
 		wp_enqueue_script('assetsJs');
 		if(get_field('api_googlemaps', 'options')){
 		$google_key=get_field('api_googlemaps', 'options');
