@@ -8,12 +8,12 @@ jQuery(document).ready(function(){
 		$('html').addClass('firefox');
 		var mt=$('.informacionesCorporativas').height();
 		$('.PostCirculares').css('padding-top',mt).css('margin','auto');
-	};
+	}
 	$('.ProductoCircular__Item__Titulo').igualarAltura();
 	$('.ProductoCircular__Item__Resumen').igualarAltura();
 	$('.PostCircular__Item__Resumen').igualarAltura();
 	$('.PostCircular__Item__Titulo').igualarAltura();
-	var p = new Parallax('.ImagenAnchoCompleto__imagen').init()
+	var p = new Parallax('.ImagenAnchoCompleto__imagen').init();
 });
 
 (function( $ ){
@@ -37,7 +37,7 @@ function initMap() {
 
 function geocodeAddress(geocoder) {
 	var url=location.origin,
-		address =String(vars.mapa);
+		address =String(Zonapro.mapa);
 	window.address=address;
 	console.log(address);
 	/*var image = {
@@ -88,10 +88,10 @@ $.fn.serializeObject = function()
 	}
 	$('#enviarEmail').click(function(e) {
 		e.preventDefault();
-		console.log(vars.ajaxurl);
-   		$.post(vars.ajaxurl, {data:$('#emailForm').serializeObject(),action:'sendEmail'}, function(data, textStatus, xhr) {
+		console.log(Zonapro.ajaxurl);
+   		$.post(Zonapro.ajaxurl, {data:$('#emailForm').serializeObject(),action:'sendEmail'}, function(data, textStatus, xhr) {
 				swal({title:"Listo!",text:"Pronto nos Contactaremos con Usted!", type:"success"},function(){
-				window.location.href =vars.redirect;
+				window.location.href =Zonapro.redirect;
 				});
 			}).fail(function(e) {
 				swal({title:"Listo!",text:"ha Sucedido un error "+e, type:"error"},function(){
