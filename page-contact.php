@@ -92,7 +92,7 @@ get_template_part('flex','section');
 						</div>
 						<div class="formField">
 							<div class="g-recaptcha" data-callback="recaptchaCallback" data-sitekey="<?php the_field('g_recaptcha_key','options')?>"></div>
-							<button id="enviarEmail" disabled>Enviar</button>
+							<button id="enviarEmail" class="btn btn-primary btn-custom" disabled>Enviar</button>
 						</div>
 					</div>
 				</form>
