@@ -93,8 +93,9 @@ jQuery(document).ready(function($) {
 			}
 		});
 	}).fail(function(e) {
-		swal({title:"Listo!",text:"ha Sucedido un error "+e, type:"error"},function(){
-
+		console.log(e);
+		swal({title:"Listo!",text:"ha Sucedido un error "+e.responseText, type:"error"},function(){
+			grecaptcha.reset();
 		});
 	});
 }); 
