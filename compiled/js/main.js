@@ -81,11 +81,9 @@ function recaptchaCallback(){
 }
 jQuery(document).ready(function($) {
 	$('#enviarEmail').click(function(e) {
-
 		e.preventDefault();
-	// alert('boton');
 	console.log(Zonapro.ajaxurl);
-	$.post(Zonapro.ajaxurl, {data:$('#emailForm').serializeObject(),action:'sendEmail'}, function(data, textStatus, xhr) {
+	$.post(Zonapro.url, {data:$('#emailForm').serializeObject(),action:'sendEmail'}, function(data, textStatus, xhr) {
 		swal({title:"Listo!",text:"Pronto nos Contactaremos con Usted!", type:"success"},function(){
 			if(Zonapro.redirect===null){
 				window.location.href="/";	

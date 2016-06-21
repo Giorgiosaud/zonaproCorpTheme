@@ -1,6 +1,7 @@
 <?php
 require_once 'vendor/autoload.php';
 require_once 'custom-posts/all.php';
+require_once 'ajax.php';
 require_once 'custom-taxonomies/all.php';
 require_once 'customizerOptions.php';
 use jorgelsaud\ZonaproCorpTheme\Styles;
