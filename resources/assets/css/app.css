@@ -2,6 +2,9 @@ body {
   padding-top: 4em;
   background-size: cover;
 }
+.wrapper {
+  min-height: 88vh;
+}
 .navbar {
   padding: 0 1rem;
 }

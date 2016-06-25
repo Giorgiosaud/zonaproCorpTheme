@@ -16,7 +16,7 @@ class InformacionCorporativa extends CustomPosts{
 	}
 	public function show(){
 		ob_start()?>
-		<div class="informacionesCorporativas <?php if($this->superpuesta) echo 'informacionesCorporativas--superpuestas'?>">
+		<div class="container informacionesCorporativas <?php if($this->superpuesta) echo 'informacionesCorporativas--superpuestas'?>">
 			<?php foreach ($this->posts as $post) { ?>
 			<div class="InformacionCorporativa" style="background:<?= $this->color_fondo?>;color:<?= $this->color_texto?>" >
 				<div class="InformacionCorporativa__Titulo">
