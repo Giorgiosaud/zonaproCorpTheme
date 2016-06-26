@@ -1,4 +1,4 @@
-jQuery(document).ready(function(){
+jQuery(document).ready(function($){
 	var ic=$('.informacionesCorporativas');
 	if(ic.children().length<=2){
 		ic.css('width','80%');
@@ -80,10 +80,8 @@ function recaptchaCallback(){
 	$('#enviarEmail').removeAttr('disabled');
 }
 jQuery(document).ready(function($) {
-	console.info(Zonapro.redirect);
 	$('#enviarEmail').click(function(e) {
 		e.preventDefault();
-	console.log(Zonapro.ajaxurl);
 	$.post(Zonapro.url, {data:$('#emailForm').serializeObject(),action:'sendEmail'}, function(data, textStatus, xhr) {
 		swal({title:"Listo!",text:"Pronto nos Contactaremos con Usted!", type:"success"},function(){
 			if(Zonapro.redirect===null){
@@ -94,7 +92,6 @@ jQuery(document).ready(function($) {
 			}
 		});
 	}).fail(function(e) {
-		console.log(e);
 		swal({title:"Listo!",text:"ha Sucedido un error "+e.responseText, type:"error"},function(){
 			grecaptcha.reset();
 		});

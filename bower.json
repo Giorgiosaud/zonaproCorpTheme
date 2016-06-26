@@ -22,6 +22,8 @@
     "Font-Awesome-Stylus": "^4.5.0",
     "font-awesome-sass": "^4.6.2",
     "scroll-parallax": "^1.1.0",
-    "tether": "^1.3.2"
+    "tether": "^1.3.2",
+    "bootstrap": "v4.0.0-alpha.2",
+    "sweetalert": "^1.1.3"
   }
 }
