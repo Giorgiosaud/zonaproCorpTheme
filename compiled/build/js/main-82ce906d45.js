@@ -80,6 +80,7 @@ function recaptchaCallback(){
 	$('#enviarEmail').removeAttr('disabled');
 }
 jQuery(document).ready(function($) {
+	console.info(Zonapro.redirect);
 	$('#enviarEmail').click(function(e) {
 		e.preventDefault();
 	console.log(Zonapro.ajaxurl);
