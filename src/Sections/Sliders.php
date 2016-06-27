@@ -5,7 +5,7 @@ class Sliders{
 	{
 	}
 	public function show(){
-		return the_field('slider');
+		return 
 	}
 }
 ?>
