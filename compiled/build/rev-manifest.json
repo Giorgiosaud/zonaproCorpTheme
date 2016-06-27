@@ -2,5 +2,9 @@
   "css/assets.css": "css/assets-60595066c3.css",
   "css/main.css": "css/main-1765a224c3.css",
   "js/assets.js": "js/assets-7d59ef229b.js",
+<<<<<<< HEAD
+  "js/main.js": "js/main-82ce906d45.js"
+=======
   "js/main.js": "js/main-83d06706ad.js"
+>>>>>>> 6e765a793830fa7d92f9d56b3dfc83d5c97deff5
 }
