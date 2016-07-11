@@ -21,8 +21,8 @@ class PostConFondo{
 	public function show(){
 		ob_start()?>
 		<div class="PostConFondo" style="background:linear-gradient(
-			<?=hex2rgba($this->colorDeFondo,.9)?>,
-			<?=hex2rgba($this->colorDeFondo,.95)?>),
+			<?= hex2rgba($this->colorDeFondo,.9)?>,
+			<?= hex2rgba($this->colorDeFondo,.95)?>),
 		url(<?=$this->imagen?>);background-size:cover;">
 		<div class="PostConFondo__Titulo">
 			<?= $this->titulo ?>
