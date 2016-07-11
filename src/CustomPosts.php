@@ -30,6 +30,7 @@ class CustomPosts{
 				$post['tiene_link']=false;
 				$post['link']=false;
 				$post['title']=get_the_title();
+				$post['content']=get_the_content();
 				$post['excerpt']=get_posts_excerpt($length,'more_callback');
 				$post['link']=get_permalink();
 				if(get_field('imagen_circular')){
@@ -44,7 +45,7 @@ class CustomPosts{
 				else{
 
 				}
-				$post['resumen']=(get_field('resumen'))?get_field('resumen'):$post['excerpt'];
+				$post['resumen']=(get_field('resumen'))?get_field('resumen'):$post['content'];
 				$posts[]=$post;
 			}
 		}
