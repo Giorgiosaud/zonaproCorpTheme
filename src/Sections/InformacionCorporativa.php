@@ -8,7 +8,7 @@ class InformacionCorporativa extends CustomPosts{
 	public function __construct($cantidad,$superpuesta,$color_fondo,$color_texto,$length='informacion_corporativa_length')
 	{
 		$this->length=$length;
-		$this->posts=CustomPosts::getPosts('infoCorporativa',$cantidad,$length);
+		$this->posts=CustomPosts::getPosts('infoCorporativa',$cantidad,$length,'ASC','menu_order');
 		$this->superpuesta=$superpuesta;
 		$this->color_fondo=$color_fondo;
 		$this->color_texto=$color_texto;

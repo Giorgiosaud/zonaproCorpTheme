@@ -34,7 +34,7 @@ class PostConFondo{
 
 				<div class="PostConFondo__Item__Imagen">
 				<?php if($post['tiene_link']):?>
-				<a href="<?= $post['link']?>">
+				<a href="<?= $post['link']?>" target="_blank">
 				<?php endif?>
 					<img src="<?= $post['imagen_circular']?>" alt="Imagen ConFondo">
 					<?php if($post['tiene_link']):?>
