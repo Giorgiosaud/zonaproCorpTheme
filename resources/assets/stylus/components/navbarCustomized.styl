@@ -23,14 +23,24 @@
 			background $colorFocusActive
 			color #FFF
 			
-@media (min-width: 768px)
+@media(max-width: 543px)
 	.navbar-customized
 		.navbar-brand
 			width 100%
+			height auto
+			display flex
+			align-items center
+			justify-content center
+			img
+				width 40%
+				height auto
+				margin auto
 		ul
 			display flex
 			float left
 			flex-direction column
+@media (min-width: 768px)
+	.navbar-customized
 		li
 			align-items center
 			justify-content center
