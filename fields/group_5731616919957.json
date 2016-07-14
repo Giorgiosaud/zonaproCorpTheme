@@ -664,7 +664,7 @@
             {
                 "param": "page",
                 "operator": "!=",
-                "value": "2"
+                "value": "66"
             }
         ]
     ],
@@ -687,5 +687,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1467031328
+    "modified": 1468528066
 }

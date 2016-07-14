@@ -40,10 +40,8 @@ class PostCircular{
 					</div>
 
 					<div class="PostCircular__Item__Resumen">
-					
 						<?=$post['resumen']?>
 					</div>
-
 						<a href="<?=$post['link']?>" class="btn PostCircular__Item__Boton btn-default"><?php _e('Ver Mas','zonaprocorptheme')?></a>	
 				</div>
 				<?php endforeach?>
