@@ -239,3 +239,11 @@ function theme_slug_widgets_init() {
 	'after_title'   => '</h2>',
     ) );
 }
+//Video Width auto embeded
+
+add_filter( 'embed_defaults', 'bigger_embed_size' );
+
+function bigger_embed_size()
+{ 
+  return array( 'width' => 600, 'height' => 430 );
+}
