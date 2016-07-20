@@ -198,7 +198,7 @@ if(!function_exists('mainMenu')){
 // Create 40 Word Callback for Custom Post Excerpts, call using politica_excerpt('html5wp_custom_post');
 function informacion_corporativa_length($length)
 {
-	return get_field('cantidad_de_palabras_de_informacion_corporativa','options');
+	return get_field('cantidad_de_palabras_de_informacion_corporativa','options')||40;
 }
 function more_callback(){
 	return '...';
