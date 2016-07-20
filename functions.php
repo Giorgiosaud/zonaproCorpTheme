@@ -198,7 +198,7 @@ if(!function_exists('mainMenu')){
 // Create 40 Word Callback for Custom Post Excerpts, call using politica_excerpt('html5wp_custom_post');
 function informacion_corporativa_length($length)
 {
-	return 40;
+	return get_field('cantidad_de_palabras_de_informacion_corporativa','options');
 }
 function more_callback(){
 	return '...';
@@ -222,8 +222,8 @@ function get_posts_excerpt($length_callback = '', $more_callback = '')
 if( function_exists('acf_add_options_page') ) {
 	
 	acf_add_options_page(array(
-	'page_title' 	=> 'Ajustes Generales',
-	'menu_title' 	=> 'Ajustes Generales',
+		'page_title' 	=> 'Ajustes Generales',
+		'menu_title' 	=> 'Ajustes Generales',
 	));
 	
 }
