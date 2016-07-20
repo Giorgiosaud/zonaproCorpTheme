@@ -244,9 +244,9 @@ function theme_slug_widgets_init() {
 }
 //Video Width auto embeded
 
-add_filter( 'embed_defaults', 'bigger_embed_size' );
-
-function bigger_embed_size()
-{ 
-  return array( 'width' => '100%', 'height' => 'auto' );
-}
+//add_filter( 'embed_defaults', 'bigger_embed_size' );
+//
+//function bigger_embed_size()
+//{ 
+//  return array( 'width' => 600, 'height' => 430 );
+//}
