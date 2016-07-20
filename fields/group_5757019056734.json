@@ -240,6 +240,45 @@
             "maxlength": "",
             "readonly": 0,
             "disabled": 0
+        },
+        {
+            "key": "field_578fab58527e6",
+            "label": "Otras Opciones",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_578fab65527e7",
+            "label": "Cantidad de Palabras de Informacion Corporativa",
+            "name": "cantidad_de_palabras_de_informacion_corporativa",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 40,
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": "",
+            "readonly": 0,
+            "disabled": 0
         }
     ],
     "location": [
@@ -259,5 +298,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1466477054
+    "modified": 1469033358
 }
