@@ -248,5 +248,5 @@ add_filter( 'embed_defaults', 'bigger_embed_size' );
 
 function bigger_embed_size()
 { 
-  return array( 'width' => 600, 'height' => 430 );
+  return array( 'width' => 1200, 'height' => 430 );
 }
