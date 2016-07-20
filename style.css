@@ -15,3 +15,30 @@ Use it to make something cool, have fun, and share what you've learned with othe
 .inner-container{
 min-height:85vh;
 }
+img.alignright {
+	padding: 4px;
+	margin: 0 0 2px 7px;
+	display: inline;
+	}
+img.alignleft {
+	padding: 4px;
+	margin: 0 7px 2px 0;
+	display: inline;
+	}
+img.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.alignright {
+	float: right;
+	}
+.alignleft {
+	float: left;
+	}
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}

@@ -25,8 +25,17 @@ function adminStyleAndScripts(){
 	$uri=get_template_directory_uri().'/css/adminStyle.css';
 	wp_register_script('adminStyle',$uri);
 	wp_enqueue_style('adminStyle',$uri);
+    	$parent_style = 'parent-style';
+	if(is_child_theme()){
+		wp_enqueue_style( $parent_style, get_template_directory_uri() . '/style.css' );
+		wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css', array( $parent_style ));
+	}
+	else{
+		wp_enqueue_style( $parent_style, get_template_directory_uri() . '/style.css' );
+	}
 }
 add_action('admin_head', 'adminStyleAndScripts');
+
 
 if ( ! function_exists( 'zonaproCorpTheme_setup' ) ) :
 	function zonaproCorpTheme_setup() {
