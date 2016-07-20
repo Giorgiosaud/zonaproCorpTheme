@@ -249,7 +249,6 @@ function custom_oembed_filter($html, $url, $attr, $post_ID) {
     $return = '<div class="video-container">'.$html.'</div>';
     return $return;
 }
-remove_filter( 'the_content', 'wpautop' );
 //add_filter( 'embed_defaults', 'bigger_embed_size' );
 //
 //function bigger_embed_size()
