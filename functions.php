@@ -243,6 +243,12 @@ function theme_slug_widgets_init() {
     ) );
 }
 //Video Width auto embeded
+add_filter( 'embed_oembed_html', 'custom_oembed_filter', 10, 4 ) ;
+
+function custom_oembed_filter($html, $url, $attr, $post_ID) {
+    $return = '<div class="video-container">'.$html.'</div>';
+    return $return;
+}
 
 //add_filter( 'embed_defaults', 'bigger_embed_size' );
 //
