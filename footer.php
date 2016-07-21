@@ -13,7 +13,7 @@
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
 			
-  ga('create', '<?php the_field('redirect','options')?>', 'auto');
+  ga('create', '<?php the_field('google_analytics_seguimiento','options')?>', 'auto');
   ga('send', 'pageview');
 
 </script>
