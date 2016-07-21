@@ -23,6 +23,10 @@ ga('create', '<?php the_field('google_analytics_seguimiento','options')?>', 'aut
 ga('send', 'pageview');
 
 </script>
+</head>
+
+<body <?php body_class(); ?>>
+
 <!-- Google Tag Manager -->
 <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-WH884Q"
 		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -32,10 +36,6 @@ new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 	'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','<?php the_field('google_tsgs_seguimiento','options')?>');</script>
 <!-- End Google Tag Manager -->
-</head>
-
-<body <?php body_class(); ?>>
-
 <?php 
 get_template_part('menu','principal');
 ?>
