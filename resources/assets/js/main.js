@@ -31,6 +31,7 @@ jQuery(document).ready(function($){
 })( jQuery );
 var map;
 function initMap() {
+	console.info('Loaded Maps and executing');
 	if(document.getElementById('map')){
 		var geocoder = new google.maps.Geocoder();
 		geocodeAddress(geocoder);
@@ -41,10 +42,8 @@ function geocodeAddress(geocoder) {
 	var url=location.origin,
 	address =String(Zonapro.mapa);
 	window.address=address;
-	console.log(address);
 	geocoder.geocode({'address': address}, function(results, status) {
 		if (status === google.maps.GeocoderStatus.OK) {
-			console.log(results);
 			map = new google.maps.Map(document.getElementById('map'), {
 				center: results[0].geometry.location,
 				zoom: 16
