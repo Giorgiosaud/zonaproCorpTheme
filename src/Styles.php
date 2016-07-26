@@ -27,14 +27,14 @@ class Styles
 			'redirect'=>get_field('redirect','options')
 			  ) );
 		wp_enqueue_script('assetsJs');
-		if(get_field('api_googlemaps', 'options')){
-		$google_key=get_field('api_googlemaps', 'options');
-	wp_register_script('googleMap',"https://maps.googleapis.com/maps/api/js?key={$google_key}&callback=initMap",array('mainJs'),null,true);
-	wp_enqueue_script('googleMap' );
-		}
 		 // die(var_dump($deps));
 		wp_register_script('mainJs',get_template_directory_uri().'/compiled/js/main.js');
 			wp_enqueue_script('mainJs');
+		if(get_field('api_googlemaps', 'options')){
+			$google_key=get_field('api_googlemaps', 'options');
+			wp_register_script('googleMap',"https://maps.googleapis.com/maps/api/js?key={$google_key}&callback=initMap",array('mainJs'),null,true);
+			wp_enqueue_script('googleMap' );
+		}
 		if(is_child_theme()){
 			wp_register_style('mainCss',get_stylesheet_directory_uri().'/compiled/css/main.css',['assetsCss']);
 			wp_enqueue_style('mainCss');

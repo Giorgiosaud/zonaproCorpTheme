@@ -44,6 +44,7 @@ function geocodeAddress(geocoder) {
 	console.log(address);
 	geocoder.geocode({'address': address}, function(results, status) {
 		if (status === google.maps.GeocoderStatus.OK) {
+			console.log(results);
 			map = new google.maps.Map(document.getElementById('map'), {
 				center: results[0].geometry.location,
 				zoom: 16
