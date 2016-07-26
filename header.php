@@ -34,7 +34,7 @@ ga('send', 'pageview');
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','<?php the_field('google_tsgs_seguimiento','options')?>');</script>
+})(window,document,'script','dataLayer','<?php the_field('google_tags_seguimiento','options')?>');</script>
 <!-- End Google Tag Manager -->
 <?php 
 get_template_part('menu','principal');
