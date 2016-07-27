@@ -22,8 +22,8 @@ get_header(); ?>
 					get_template_part('flex','section');
 ?>
 					<div class="container-fluid">
-						<iframe src="<?php the_field('direccion')?>" class="myIframe" width="100%" frameBorder="0"></iframe>
 						<?php the_content(); ?>
+						<iframe src="<?php the_field('direccion')?>" class="myIframe" width="100%" frameBorder="0"></iframe>
 					</div>
 					<?php edit_post_link(); ?>
 					<br class="clear">
