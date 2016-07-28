@@ -7,7 +7,7 @@
 		</button>
 		<div class="collapse navbar-toggleable-xs " id="exCollapsingNavbar2">
 			
-			zonaproCorp_custom_logo();
+			<?php zonaproCorp_custom_logo();?>
 			<?php if ( has_nav_menu( 'main-menu' ) ) {
 			mainMenu();
 			}?>
