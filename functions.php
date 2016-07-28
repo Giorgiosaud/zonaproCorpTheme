@@ -134,6 +134,9 @@ if ( ! function_exists( 'zonaproCorp_custom_logo' ) ) :
 			the_custom_logo();
 
 		}
+		else{
+			echo '<a class="navbar-brand" href="'.get_bloginfo('url').'">'.get_bloginfo('name').'</a>';
+		}
 	}
 endif;
 
