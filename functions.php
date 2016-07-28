@@ -125,19 +125,19 @@ if ( ! function_exists( 'zonaproCorp_custom_logo' ) ) :
 	 */
 	function zonaproCorp_custom_logo() {
 		if ( function_exists( 'the_custom_logo' ) ) {
+			if(has_custom_logo()){
+				function example_callback( $html ) {
+					$html= str_replace('class="','class="navbar-brand ',$html);
+					return $html;
+				}
+				add_filter( 'get_custom_logo', 'example_callback' );
+				the_custom_logo();
 
-			function example_callback( $html ) {
-				$html= str_replace('class="','class="navbar-brand ',$html);
-				return $html;
 			}
-			add_filter( 'get_custom_logo', 'example_callback' );
-			the_custom_logo();
-
+			else{
+				echo '<a class="navbar-brand" href="'.get_bloginfo('url').'">'.get_bloginfo('name').'</a>';
+			}
 		}
-		else{
-			echo '<a class="navbar-brand" href="'.get_bloginfo('url').'">'.get_bloginfo('name').'</a>';
-		}
-	}
 endif;
 
 
@@ -226,31 +226,31 @@ function get_posts_excerpt($length_callback = '', $more_callback = '')
 	return $output;
 }
 if( function_exists('acf_add_options_page') ) {
-	
+
 	acf_add_options_page(array(
 		'page_title' 	=> 'Ajustes Generales',
 		'menu_title' 	=> 'Ajustes Generales',
 	));
-	
+
 }
 add_action( 'widgets_init', 'theme_slug_widgets_init' );
 function theme_slug_widgets_init() {
-    register_sidebar( array(
-        'name' => __( 'Main Sidebar', 'theme-slug' ),
-        'id' => 'sidebar-1',
-        'description' => __( 'Widgets in this area will be shown on all posts and pages.', 'theme-slug' ),
-        'before_widget' => '<li id="%1$s" class="widget %2$s">',
-	'after_widget'  => '</li>',
-	'before_title'  => '<h2 class="widgettitle">',
-	'after_title'   => '</h2>',
-    ) );
+	register_sidebar( array(
+		'name' => __( 'Main Sidebar', 'theme-slug' ),
+		'id' => 'sidebar-1',
+		'description' => __( 'Widgets in this area will be shown on all posts and pages.', 'theme-slug' ),
+		'before_widget' => '<li id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</li>',
+		'before_title'  => '<h2 class="widgettitle">',
+		'after_title'   => '</h2>',
+	) );
 }
 //Video Width auto embeded
 add_filter( 'embed_oembed_html', 'custom_oembed_filter', 10, 4 ) ;
 
 function custom_oembed_filter($html, $url, $attr, $post_ID) {
-    $return = '<div class="video-container">'.$html.'</div>';
-    return $return;
+	$return = '<div class="video-container">'.$html.'</div>';
+	return $return;
 }
 //add_filter( 'embed_defaults', 'bigger_embed_size' );
 //
