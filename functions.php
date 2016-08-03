@@ -37,6 +37,12 @@ function adminStyleAndScripts(){
 add_action('admin_head', 'adminStyleAndScripts');
 
 
+add_filter('option_blogname', 'local_blogname');
+
+ function local_blogname($name) {
+        return apply_filters('the_title', $name);
+ }
+
 if ( ! function_exists( 'zonaproCorpTheme_setup' ) ) :
 	function zonaproCorpTheme_setup() {
 		//Estilo del editor Wysing
