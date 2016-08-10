@@ -38,7 +38,7 @@ class Styles
 		if(is_child_theme()){
 			wp_register_style('mainCss',get_stylesheet_directory_uri().'/compiled/css/main.css',['assetsCss']);
 			wp_enqueue_style('mainCss');
-			wp_register_script('childJs',get_stylesheet_directory_uri().'/compiled/js/child.js',['mainJs']);
+			wp_register_script('childJs',get_stylesheet_directory_uri().'/compiled/js/child.js',array('mainJs'));
 			wp_enqueue_script('childJs');
 		}
 		else{
