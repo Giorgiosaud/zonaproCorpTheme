@@ -1,3 +1,4 @@
+var childGeocode;
 jQuery(document).ready(function($){
 	$('.myIframe').css('height', $(window).height()+'px');
 	var ic=$('.informacionesCorporativas');
@@ -37,7 +38,7 @@ function initMap() {
 		
 		geocodeAddress();
 	}
-	if ($.isFunction('childGeocode')) {
+	if ($.isFunction(childGeocode)) {
 		childGeocode();
 	}
 
