@@ -38,7 +38,7 @@ function initMap() {
 		geocodeAddress(geocoder);
 	}
 	if ($.isFunction('childGeocode')) {
-		childGeocode();
+		childGeocode(geocoder);
 	}
 
 }
