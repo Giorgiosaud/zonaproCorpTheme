@@ -34,17 +34,18 @@ var map;
 function initMap() {
 	console.info('Loaded Maps and executing');
 	if(document.getElementById('map')){
-		var geocoder = new google.maps.Geocoder();
-		geocodeAddress(geocoder);
+		
+		geocodeAddress();
 	}
 	if ($.isFunction('childGeocode')) {
-		childGeocode(geocoder);
+		childGeocode();
 	}
 
 }
 
-function geocodeAddress(geocoder) {
-	var url=location.origin,
+function geocodeAddress() {
+	var geocoder = new google.maps.Geocoder(),
+	url=location.origin,
 	address =String(Zonapro.mapa);
 	window.address=address;
 	geocoder.geocode({'address': address}, function(results, status) {
