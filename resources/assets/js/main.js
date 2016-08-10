@@ -37,6 +37,10 @@ function initMap() {
 		var geocoder = new google.maps.Geocoder();
 		geocodeAddress(geocoder);
 	}
+	if ($.isFunction(childGeocode)) {
+		childGeocode();
+	}
+
 }
 
 function geocodeAddress(geocoder) {
