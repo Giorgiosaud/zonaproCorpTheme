@@ -36,11 +36,11 @@ class PostCircular{
 						<img src="<?= $post['imagen_circular']?>" alt="Imagen Circular">
 					</div>
 					<div class="PostCircular__Item__Titulo">
-						<?=$post['title']?>
+						<?php echo apply_filters( ‘the_title’, $post['title'])?>
 					</div>
 
 					<div class="PostCircular__Item__Resumen">
-						<?=$post['resumen']?>
+						<?php echo apply_filters( ‘the_title’, $post['resumen']) ?>
 					</div>
 						<a href="<?=$post['link']?>" target="_blank" class="btn PostCircular__Item__Boton btn-default"><?php _e('Ver Mas','zonaprocorptheme')?></a>	
 				</div>
