@@ -1,5 +1,6 @@
 <?php
 use jorgelsaud\ZonaproCorpTheme\Sections\SmartSlider;
+use jorgelsaud\ZonaproCorpTheme\Sections\RevSliderById;
 use jorgelsaud\ZonaproCorpTheme\Sections\Sliders;
 use jorgelsaud\ZonaproCorpTheme\Sections\InformacionCorporativa;
 use jorgelsaud\ZonaproCorpTheme\Sections\PostCircular;
@@ -23,6 +24,10 @@ if( have_rows('page_sections') ){
 			break;
 		case 'revolution_sliders':
 			the_sub_field('slider');
+			break;
+		case 'revolution_sliders_by_id':
+			$slider=new RevSliderById();
+			echo $slider->show();
 			break;
 		case 'informacion_corporativa':
 			$informacionCorporativa=new informacionCorporativa(get_sub_field('cantidad'),get_sub_field('superpuesta'),get_sub_field('color_fondo'),get_sub_field('color_texto'),get_sub_field('lenght_function'));

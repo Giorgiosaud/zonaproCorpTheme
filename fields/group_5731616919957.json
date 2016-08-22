@@ -67,6 +67,37 @@
                     "max": ""
                 },
                 {
+                    "key": "57bb3e0106888",
+                    "name": "revolution_sliders_by_id",
+                    "label": "Revolution Slider by Id",
+                    "display": "table",
+                    "sub_fields": [
+                        {
+                            "key": "field_57bb3e0106889",
+                            "label": "id",
+                            "name": "id",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": "",
+                            "readonly": 0,
+                            "disabled": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                {
                     "key": "576df34064f10",
                     "name": "smartSlider",
                     "label": "Smart Sliders",
@@ -687,5 +718,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1468528066
+    "modified": 1471888909
 }
