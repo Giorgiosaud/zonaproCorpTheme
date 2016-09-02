@@ -24,6 +24,7 @@
     "scroll-parallax": "^1.1.0",
     "tether": "^1.3.2",
     "bootstrap": "v4.0.0-alpha.2",
-    "sweetalert": "^1.1.3"
+    "sweetalert": "^1.1.3",
+    "slick-carousel": "^1.6.0"
   }
 }

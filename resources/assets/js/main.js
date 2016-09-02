@@ -18,12 +18,17 @@ jQuery(document).ready(function($){
 	if($('.ImagenAnchoCompleto__imagen').length>0){
 		var p = new Parallax('.ImagenAnchoCompleto__imagen').init();
 	}
+	$('.PostCarusel').slick({
+		infinite: true,
+		slidesToShow: 3,
+		slidesToScroll: 3
+	});
 });
 
 (function( $ ){
 	$.fn.igualarAltura = function() {
 		var $this=this,
-		height=0;
+			height=0;
 		$this.each(function(index,value){
 			height=(height>$(value).height())?height:$(value).height();
 		});
@@ -35,7 +40,7 @@ var map;
 function initMap() {
 	console.info('Loaded Maps and executing');
 	if(document.getElementById('map')){
-		
+
 		geocodeAddress();
 	}
 	if ($.isFunction(childGeocode)) {
@@ -46,8 +51,8 @@ function initMap() {
 
 function geocodeAddress() {
 	var geocoder = new google.maps.Geocoder(),
-	url=location.origin,
-	address =String(Zonapro.mapa);
+		url=location.origin,
+		address =String(Zonapro.mapa);
 	window.address=address;
 	geocoder.geocode({'address': address}, function(results, status) {
 		if (status === google.maps.GeocoderStatus.OK) {
@@ -89,19 +94,19 @@ function recaptchaCallback(){
 jQuery(document).ready(function($) {
 	$('#enviarEmail').click(function(e) {
 		e.preventDefault();
-	$.post(Zonapro.url, {data:$('#emailForm').serializeObject(),action:'sendEmail'}, function(data, textStatus, xhr) {
-		swal({title:"Listo!",text:"Pronto nos Contactaremos con Usted!", type:"success"},function(){
-			if(Zonapro.redirect===null){
-				window.location.href="/";	
-			}
-			else{
-				window.location.href =Zonapro.redirect;
-			}
+		$.post(Zonapro.url, {data:$('#emailForm').serializeObject(),action:'sendEmail'}, function(data, textStatus, xhr) {
+			swal({title:"Listo!",text:"Pronto nos Contactaremos con Usted!", type:"success"},function(){
+				if(Zonapro.redirect===null){
+					window.location.href="/";	
+				}
+				else{
+					window.location.href =Zonapro.redirect;
+				}
+			});
+		}).fail(function(e) {
+			swal({title:"Listo!",text:"ha Sucedido un error "+e.responseText, type:"error"},function(){
+				grecaptcha.reset();
+			});
 		});
-	}).fail(function(e) {
-		swal({title:"Listo!",text:"ha Sucedido un error "+e.responseText, type:"error"},function(){
-			grecaptcha.reset();
-		});
-	});
-}); 
+	}); 
 });

@@ -17,6 +17,6 @@
 		]
 	},
 	"require": {
-		"jorgelsaud/bootstrap-nav-walker": "2.*"
+		"jorgelsaud/bootstrap-nav-walker": "dev-master"
 	}
 }

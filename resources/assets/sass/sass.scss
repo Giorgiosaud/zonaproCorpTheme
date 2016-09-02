@@ -1,6 +1,7 @@
 $open-sans-path: "../fonts";
 $icon-font-path:"../fonts/bootstrap/";
 $fa-font-path:"../fonts/font-awesome/";
+$slick-font-path:"../fonts/";
 @import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700);
 @import url(https://file.myfontastic.com/n6vo44Re5QaWo8oCKShBs7/icons.css);
 @import 'open-sans/scss/open-sans';
@@ -8,3 +9,5 @@ $font-family-base: "Open Sans","Helvetica Neue", Helvetica, Arial, sans-serif;
 @import 'bootstrap/scss/bootstrap';
 @import 'font-awesome-sass/assets/stylesheets/font-awesome';
 @import 'sweetalert/dev/sweetalert';
+@import 'slick-carousel/slick/slick.scss';
+@import 'slick-carousel/slick/slick-theme.scss';

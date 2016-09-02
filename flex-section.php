@@ -4,6 +4,7 @@ use jorgelsaud\ZonaproCorpTheme\Sections\RevSliderById;
 use jorgelsaud\ZonaproCorpTheme\Sections\Sliders;
 use jorgelsaud\ZonaproCorpTheme\Sections\InformacionCorporativa;
 use jorgelsaud\ZonaproCorpTheme\Sections\PostCircular;
+use jorgelsaud\ZonaproCorpTheme\Sections\PostCircularConCarusel;
 use jorgelsaud\ZonaproCorpTheme\Sections\PostConFondo;
 use jorgelsaud\ZonaproCorpTheme\Sections\FormularioDeContacto;
 use jorgelsaud\ZonaproCorpTheme\Sections\ProductosCirculares;
@@ -15,11 +16,9 @@ if( have_rows('page_sections') ){
 		the_row();
 		switch (get_row_layout()){
 		case 'smart_slider':
-			$slider=new SmartSlider(get_sub_field('id'));
-			echo $slider->show();
+			$slider=new SmartSlider();
 			break;
 		case 'smartSlider':
-
 			the_sub_field('slider');
 			break;
 		case 'revolution_sliders':
@@ -27,18 +26,17 @@ if( have_rows('page_sections') ){
 			break;
 		case 'revolution_sliders_by_id':
 			$slider=new RevSliderById();
-			echo $slider->show();
 			break;
 		case 'informacion_corporativa':
-			$informacionCorporativa=new informacionCorporativa(get_sub_field('cantidad'),get_sub_field('superpuesta'),get_sub_field('color_fondo'),get_sub_field('color_texto'),get_sub_field('lenght_function'));
-			$informacionCorporativa->show();
+			$informacionCorporativa=new informacionCorporativa();
 			break;
 		case 'anadir_posts_circular_con_titulo_y_subtitulo':
+			$customPosts=new PostCircular();
+			break;
+		case 'añadir_posts_circular_con_titulo_subtitulo_y_carrusel':
 			$rand=false;
 			$rand=get_sub_field('rand');
-
-			$customPosts=new PostCircular(get_sub_field('titulo'),get_sub_field('subtitulo'),get_sub_field('tipo_de_post'),get_sub_field('cantidad_de_posts'),null,get_sub_field('rand'));
-			$customPosts->show();
+			$customPosts=new PostCircularConCarusel();
 			break;
 		case 'anadir_posts_con_fondo':
 			$PostConFondo=new PostConFondo(get_sub_field('titulo'),get_sub_field('tipo_de_post'),get_sub_field('cantidad_de_posts'),get_sub_field('color_de_fondo'),get_sub_field('imagen_de_fondo'));

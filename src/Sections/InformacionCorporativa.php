@@ -2,17 +2,16 @@
 namespace jorgelsaud\ZonaproCorpTheme\Sections;
 use jorgelsaud\ZonaproCorpTheme\CustomPosts;
 class InformacionCorporativa extends CustomPosts{
-	private $id;
 
-	private $length;
-	public function __construct($cantidad,$superpuesta,$color_fondo,$color_texto,$length='informacion_corporativa_length')
+	public function __construct()
 	{
-		$this->length=$length;
-		$this->posts=CustomPosts::getPosts('infoCorporativa',$cantidad,$length,'ASC','menu_order');
-		$this->superpuesta=$superpuesta;
-		$this->color_fondo=$color_fondo;
-		$this->color_texto=$color_texto;
+		$this->length=get_sub_field('length_function') ? get_sub_field('length_function'):'informacion_corporativa_length';
+		$this->posts=CustomPosts::getPosts('infoCorporativa',get_sub_field('cantidad'),$this->length,'ASC','menu_order');
+		$this->superpuesta=get_sub_field('superpuesta');
+		$this->color_fondo=get_sub_field('color_fondo');
+		$this->color_texto=get_sub_field('color_texto');
 		$this->qty=count($this->posts);
+		echo $this->show();
 	}
 	public function show(){
 		ob_start()?>
@@ -29,8 +28,7 @@ class InformacionCorporativa extends CustomPosts{
 			<?php	} ?>		
 		</div>
 		<?php
-		echo ob_get_clean();
-		return true;
+		return ob_get_clean();
 	}
 }
 ?>
