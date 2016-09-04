@@ -18,7 +18,7 @@ jQuery(document).ready(function($){
 	if($('.ImagenAnchoCompleto__imagen').length>0){
 		var p = new Parallax('.ImagenAnchoCompleto__imagen').init();
 	}
-		$('.PostCarusel').slick();
+	//		$('.PostCarusel').slick();
 	//		infinite: true,
 	//		adaptiveHeight:true,
 	//		accessibility:true,
