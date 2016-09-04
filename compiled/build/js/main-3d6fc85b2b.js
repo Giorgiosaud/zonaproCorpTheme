@@ -20,6 +20,9 @@ jQuery(document).ready(function($){
 	}
 	$('.PostCarusel').slick({
 		infinite: true,
+		adaptiveHeight:true,
+		accessibility:true,
+		arrows:true,
 		slidesToShow: 3,
 		slidesToScroll: 3,
 		responsive: [
