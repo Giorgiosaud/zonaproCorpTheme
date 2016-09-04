@@ -16,6 +16,7 @@ class PostCircularConCarusel{
 		if(get_sub_field('mostrar_todos')){
 			$this->cantidad=-1;
 		}
+		$length=(get_sub_field('length'))?get_sub_field('length'):'informacion_corporativa_length';
 		$this->posts=CustomPosts::getPosts($this->tipoDePost,$this->cantiad,$length,null,$rand);
 		echo $this->show();
 	}
