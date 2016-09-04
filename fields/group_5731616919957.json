@@ -481,7 +481,7 @@
                             "name": "mostrar_todos",
                             "type": "true_false",
                             "instructions": "",
-                            "required": 1,
+                            "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
                                 "width": "",
@@ -845,5 +845,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1472303055
+    "modified": 1473015164
 }
