@@ -582,6 +582,9 @@ form.ContactForm {
 .slick-next {
   right: -2rem;
 }
+.PostCircular__Item__Resumen {
+  height: auto !important;
+}
 
 /*# sourceMappingURL=app.css.map */
 
