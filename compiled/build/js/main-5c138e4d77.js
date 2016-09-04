@@ -18,37 +18,37 @@ jQuery(document).ready(function($){
 	if($('.ImagenAnchoCompleto__imagen').length>0){
 		var p = new Parallax('.ImagenAnchoCompleto__imagen').init();
 	}
-	//		$('.PostCarusel').slick();
-	//		infinite: true,
-	//		adaptiveHeight:true,
-	//		accessibility:true,
-	//		arrows:true,
-	//		slidesToShow: 3,
-	//		slidesToScroll: 3,
-	//		responsive: [
-	//			{
-	//				breakpoint: 1024,
-	//				settings: {
-	//					slidesToShow: 3,
-	//					slidesToScroll: 3,
-	//				}
-	//			},
-	//			{
-	//				breakpoint: 600,
-	//				settings: {
-	//					slidesToShow: 2,
-	//					slidesToScroll: 2
-	//				}
-	//			},
-	//			{
-	//				breakpoint: 480,
-	//				settings: {
-	//					slidesToShow: 1,
-	//					slidesToScroll: 1
-	//				}
-	//			}
-	//		]
-	//	});
+	$('.PostCarusel').slick({
+	infinite: true,
+	adaptiveHeight:true,
+	accessibility:true,
+	arrows:true,
+	slidesToShow: 3,
+	slidesToScroll: 3,
+	responsive: [
+		{
+			breakpoint: 1024,
+			settings: {
+				slidesToShow: 3,
+				slidesToScroll: 3,
+			}
+		},
+		{
+			breakpoint: 600,
+			settings: {
+				slidesToShow: 2,
+				slidesToScroll: 2
+			}
+		},
+		{
+			breakpoint: 480,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1
+			}
+		}
+	]
+});
 });
 
 (function( $ ){
