@@ -42,7 +42,7 @@ class PostConFondo{
 		<?php endif?>
 				</div>
 				<div class="PostConFondo__Item__Resumen">
-					<?=$post['resumen']?>
+					<?=apply_filters('the_title',$post['resumen'])?>
 				</div>
 				
 	</div>
