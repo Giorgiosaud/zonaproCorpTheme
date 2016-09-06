@@ -32,7 +32,7 @@ jQuery(document).ready(function($){
 			}
 		},
 		{
-			breakpoint: 555,
+			breakpoint: 780,
 			settings: {
 				slidesToShow: 1,
 			}
