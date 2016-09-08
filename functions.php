@@ -267,3 +267,13 @@ function custom_oembed_filter($html, $url, $attr, $post_ID) {
 //{ 
 //  return array( 'width' => 600, 'height' => 430 );
 //}
+function my_et_builder_post_types( $post_types ) {
+    $post_types[] = 'servicios';
+    $post_types[] = 'productos';
+    $post_types[] = 'infocorporativa';
+    $post_types[] = 'representaciones';
+     
+    return $post_types;
+}
+add_filter( 'et_builder_post_types', 'my_et_builder_post_types' );
+
