@@ -12,9 +12,12 @@ class ImagenFW{
 		ob_start()?>
 		<div class='ImagenAnchoCompleto'>
 			<img src="<?= $this->imagen ?>" alt='Imagen Full Ancho' class='img-responsive ImagenAnchoCompleto__imagen'/>
+			<?php if($this->titulo!=''):?>
 			<div class="ImagenAnchoCompleto__titulo">
 				<p><?= $this->titulo?></p>
 			</div>
+			<?php endif;?>
+
 		</div>
 <?php
 			echo ob_get_clean();
