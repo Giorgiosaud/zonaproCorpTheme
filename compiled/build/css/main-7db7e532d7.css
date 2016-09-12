@@ -548,6 +548,10 @@ form.ContactForm {
   width: 100%;
   overflow: hidden;
 }
+.ImagenAnchoCompleto img {
+  width: 100%;
+  height: auto;
+}
 .ImagenAnchoCompleto__titulo {
   position: absolute;
   bottom: 0.5em;
